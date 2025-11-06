@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Array Methods Example</title>
+</head>
+<body>
+  <h2>Array Methods: Adding, Removing, Extracting, and Combining</h2>
+  <script>
+    // Initial array
+    let fruits = ["1", "2", "3"];
+    document.write("<b>Initial:</b> " + fruits + "<br>");
+
+    // 1) Adding elements
+    fruits.push("4");    // Add at end
+    fruits.unshift("5"); // Add at beginning
+    document.write("<b>After Adding:</b> " + fruits + "<br>");
+
+    // 2) Removing elements
+    let last = fruits.pop();    // Remove last
+    let first = fruits.shift(); // Remove first
+    document.write("<b>Removed First:</b> " + first + ", <b>Removed Last:</b> " + last + "<br>");
+    document.write("<b>After Removing:</b> " + fruits + "<br>");
+
+    // 3) Extracting part of array (slice)
+    let someFruits = fruits.slice(0, 2); // non-mutating
+    document.write("<b>Extracted (slice 0,2):</b> " + someFruits + "<br>");
+    document.write("<b>Original after slice:</b> " + fruits + "<br>");
+
+    // 4) Combining arrays
+    let tropical = ["6", "7"];
+    let combined = fruits.concat(tropical);
+    document.write("<b>Combined Arrays:</b> " + combined + "<br>");
+  </script>
+</body>
+</html>

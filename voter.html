@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Check Voter Eligibility</h2>
+     <label for="">Name:</label><br>
+     <input type="text" placeholder="ex:syam" id="name">
+     <label for="">age:</label>
+     <input type="text" placeholder="ex:19" id="age"><br>
+     <button onclick="show()">check</button>
+
+     <script>
+        function show()
+        {
+            let name=document.getElementById("name").value;
+            let age=document.getElementById("age").value;
+             if(age >= 18)
+    {
+        alert("your are eligible for vote");
+        
+    }
+    else{
+        alert("not eligible for vote");
+        }
+    }
+     </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Input Methods</title>
+</head>
+<body>
+
+  <h2>Different ways of Taking Input in JavaScript</h2>
+
+  <script>
+    // 1. Using prompt()
+    let name = prompt("enter your namr:");
+    document.write("hello...." + name +"good morning!"+"<br>");
+
+    //2. using html input field
+    document.write("name: "+'<input type="text" id="txtinput" placeholder="type something">');
+    document.write('<button="shoewinput()">submit</button><br>');
+
+    function showinput()
+    {
+        let val = document.getElementById("txtinput").value;
+        document.write("you typed:"+val+"(form input box)<br>");
+    }
+    </script>
+    </body>
+    </html>
